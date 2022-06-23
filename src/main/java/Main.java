@@ -8,15 +8,22 @@ public class Main {
     public static void main(String[] args) {
         // your code here
         
-		boolean areYouHungry = true;
-        boolean areyouThirsty = false;
-        boolean areYouSleepy = true;
-        boolean areYouSad = false;
+		boolean isTrue = true;
+        boolean isFalse = false;
         
-        System.out.println(areYouHungry && areYouSleepy);
-        System.out.println(areYouHungry && areyouThirsty);
-        System.out.println(areyouThirsty && areYouSad);
-        System.out.println(areyouThirsty && areYouSleepy);
+        System.out.println("Truth Table for &&: ");
+        System.out.println(isTrue && isTrue); // returns true
+        System.out.println(isTrue && isFalse); // returns false
+        System.out.println(isFalse && isFalse); // returns false
+        System.out.println(isFalse && isTrue); // returns false
+
+        System.out.println("===================");
+
+        System.out.println("Truth Table for ||: ");
+        System.out.println(isTrue || isTrue); // returns true
+        System.out.println(isTrue || isFalse); // returns true
+        System.out.println(isFalse || isFalse); // returns false
+        System.out.println(isFalse || isTrue); // returns true
 
     }
 }
